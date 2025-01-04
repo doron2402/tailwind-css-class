@@ -29,3 +29,23 @@ module.exports = {
 ```bash
 npx tailwindcss -i ./styles.css -o ./output.css --watch
 ```
+5. Customization
+```js
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        customBlue: '#1E40AF',
+        customPink: '#EC4899',
+      },
+    },
+  },
+};
+```
+```html
+<div class="bg-customBlue text-customPink">
+  Custom Colors
+</div>
+```
+
